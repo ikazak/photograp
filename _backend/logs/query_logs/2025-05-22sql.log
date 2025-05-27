@@ -1,0 +1,32 @@
+success: (N3FQ7) [2025-05-22 09:14:18] SELECT * FROM `packages` where status = 1
+success: (BIC2N) [2025-05-22 09:14:21] SELECT * FROM `packages` where status = 1
+success: (XQV84) [2025-05-22 09:14:22] SELECT * FROM `inventory` where status = 1
+success: (KXPR2) [2025-05-22 09:14:23] SELECT * FROM `photographers` where status = 1
+success: (N8QP7) [2025-05-22 09:14:23] SELECT * FROM `inventory` where status = 1
+success: (4EPL2) [2025-05-22 09:14:25] select * from inventory where inventoryID = 3
+success: (BGIDU) [2025-05-22 09:14:29] SELECT * FROM `packages` where status = 1
+success: (6EU4Y) [2025-05-22 09:14:30] select * from packages where packageID = 2
+success: (3RVEY) [2025-05-22 09:23:39] SELECT * FROM `packages` where status = 1
+success: (S65FR) [2025-05-22 09:24:19] SELECT * FROM `packages` where status = 1
+success: (YUF4P) [2025-05-22 09:27:15] SELECT * FROM `packages` where status = 1
+success: (J6S7K) [2025-05-22 09:27:42] SELECT * FROM `packages` where status = 1
+success: (RI23S) [2025-05-22 09:27:44] SELECT * FROM `packages` where status = 1
+success: (F6B48) [2025-05-22 09:28:24] SELECT * FROM `packages` where status = 1
+success: (JN62I) [2025-05-22 09:32:52] SELECT * FROM `packages` where status = 1
+success: (GY7ND) [2025-05-22 09:34:00] SELECT * FROM `packages` where status = 1
+success: (BSHQ3) [2025-05-22 14:52:08] SELECT * FROM `photographers` where status = 1
+success: (N1QVE) [2025-05-22 14:54:11] SELECT * FROM `photographers` where status = 1
+success: (8ZKX9) [2025-05-22 14:54:16] SELECT * FROM `photographers` where status = 1
+success: (FHARB) [2025-05-22 14:54:38] SELECT * FROM `photographers` where status = 1
+success: (CESVD) [2025-05-22 14:56:24] SELECT * FROM `photographers` where status = 1
+success: (I3EYK) [2025-05-22 14:56:44] SELECT * FROM `photographers` where status = 1
+success: (WDR6T) [2025-05-22 14:58:21] SELECT * FROM `photographers` where status = 1
+success: (AEJBV) [2025-05-22 14:59:02] SELECT * FROM `photographers` where status = 1
+success: (5B4Z9) [2025-05-22 14:59:13] SELECT * FROM `photographers` where status = 1
+success: (UQGFZ) [2025-05-22 15:18:18] select * from photographers where photographer_email = 'admin@gmail.com' and photographer_password = 'admin'
+success: (5CPNJ) [2025-05-22 15:18:53] select * from photographers where photographer_email = 'admin@gmail.com' and photographer_password = 'admin'
+success: (7Z18X) [2025-05-22 15:30:12] SELECT * FROM `photographers` where status = 1
+success: (YEV1Z) [2025-05-22 15:30:20] SELECT * FROM `photographers` where status = 1
+success: (TC51L) [2025-05-22 15:30:27] SELECT * FROM `photographers` where status = 1
+success: (LT92Z) [2025-05-22 15:30:39] SELECT * FROM `photographers` where status = 1
+success: (QXF28) [2025-05-22 15:30:41] SELECT * FROM `photographers` where status = 1
