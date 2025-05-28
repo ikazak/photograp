@@ -121,87 +121,7 @@
     <!-- Call To Action Section End -->
 
     <!-- Footer Section Begin -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__top">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6">
-                        <div class="footer__top__logo">
-                            <a href="#"><img src="img/logo.png" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="footer__top__social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-dribbble"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-youtube-play"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer__option">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="footer__option__item">
-                            <h5>About us</h5>
-                            <p>Formed in 2006 by Matt Hobbs and Cael Jones, Videoprah is an award-winning, full-service
-                                production company specializing.</p>
-                            <a href="#" class="read__more">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3">
-                        <div class="footer__option__item">
-                            <h5>Who we are</h5>
-                            <ul>
-                                <li><a href="#">Team</a></li>
-                                <li><a href="#">Carrers</a></li>
-                                <li><a href="#">Contact us</a></li>
-                                <li><a href="#">Locations</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3">
-                        <div class="footer__option__item">
-                            <h5>Our work</h5>
-                            <ul>
-                                <li><a href="#">Feature</a></li>
-                                <li><a href="#">Latest</a></li>
-                                <li><a href="#">Browse Archive</a></li>
-                                <li><a href="#">Video for web</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="footer__option__item">
-                            <h5>Newsletter</h5>
-                            <p>Videoprah is an award-winning, full-service production company specializing.</p>
-                            <form action="#">
-                                <input type="text" placeholder="Email">
-                                <button type="submit"><i class="fa fa-send"></i></button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer__copyright">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        <p class="footer__copyright__text">Copyright &copy;
-                            <script>
-                                document.write(new Date().getFullYear());
-                            </script>
-                            All rights reserved | This template is made with <i class="fa fa-heart-o"
-                                aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                        </p>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <?=include_page('landing/foot')?>
     <!-- Footer Section End -->
 
     <!-- Js Plugins -->
@@ -216,3 +136,198 @@
 </body>
 
 </html>
+
+<style>
+    /* Custom CSS Variables for White and Red Theme */
+:root {
+    --primary-red: #ff0000; /* A vibrant red */
+    --dark-red: #cc0000;    /* A darker shade of red for accents */
+    --light-red: #ff3333;   /* A lighter shade of red */
+    --white: #ffffff;       /* Pure white */
+    --light-gray: #f0f0f0;  /* Very light gray for subtle backgrounds */
+    --dark-gray: #333333;   /* Dark gray for text on light backgrounds */
+    --text-color-light: #555555; /* Slightly darker gray for general text */
+    --border-color: #e0e0e0; /* Light border color */
+}
+
+/* General Body and Text Styles */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--text-color-light);
+    background-color: var(--white); /* White background for the entire page */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Play', sans-serif;
+    color: var(--dark-gray); /* Dark gray for headings */
+}
+
+a {
+    color: var(--primary-red); /* Red links */
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--dark-red); /* Darker red on hover */
+    text-decoration: none;
+}
+
+/* --- Header and Navigation Bar --- */
+.header {
+    background-color: var(--white); /* White background for the header */
+    border-bottom: 1px solid var(--border-color); /* Subtle border */
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+}
+
+.header__logo img {
+    /* Adjust logo if it's not white on red */
+    /* You might need a white version of your logo for the red background */
+    filter: brightness(0); /* Make the logo black if it's colored, then you can change the color */
+}
+
+.header__menu ul li a {
+    color: var(--dark-gray); /* Dark gray for navigation links */
+    font-weight: 600;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.header__menu ul li a:hover,
+.header__menu ul li.active a {
+    color: var(--primary-red); /* Red on hover and active */
+}
+
+.header__right a {
+    color: var(--primary-red); /* Red for header right icons/links */
+    font-size: 20px;
+    margin-left: 20px;
+}
+.header__right a:hover {
+    color: var(--dark-red);
+}
+
+/* --- Breadcrumb Section --- */
+
+
+/* --- Contact Widget Section --- */
+.contact-widget {
+    background-color: var(--white); /* Ensure widget section has a white background */
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.contact__widget__item {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact__widget__item__icon i {
+    font-size: 48px;
+    color: var(--primary-red); /* Red icons */
+    margin-bottom: 15px;
+}
+
+.contact__widget__item__text h4 {
+    color: var(--dark-gray); /* Dark gray heading */
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.contact__widget__item__text p {
+    color: var(--text-color-light); /* Standard text color */
+}
+
+/* --- Contact Form Section --- */
+.contact {
+    background-color: var(--light-gray); /* Light gray background for contrast */
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.contact__map iframe {
+    width: 100%;
+    height: 450px;
+    border: 2px solid var(--border-color); /* Subtle border for the map */
+}
+
+.contact__form h3 {
+    color: var(--dark-gray);
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.contact__form form input,
+.contact__form form textarea {
+    width: 100%;
+    border: 1px solid var(--border-color); /* Light border for inputs */
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    background-color: var(--white); /* White input backgrounds */
+    color: var(--dark-gray);
+}
+
+.contact__form form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact__form form input::placeholder,
+.contact__form form textarea::placeholder {
+    color: var(--text-color-light);
+}
+
+.site-btn {
+    display: inline-block;
+    background-color: var(--primary-red); /* Red button */
+    color: var(--white); /* White text on button */
+    padding: 15px 35px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.site-btn:hover {
+    background-color: var(--dark-red); /* Darker red on hover */
+    color: var(--white);
+}
+
+/* --- Footer Section --- */
+
+
+/* Preloader */
+#preloder {
+    background: var(--primary-red); /* Red preloader background */
+}
+.loader {
+    border: 6px solid var(--white); /* White loader border */
+    border-top: 6px solid var(--dark-red); /* Dark red top border for animation */
+}
+
+/* Adjustments for responsiveness if necessary */
+@media (max-width: 991px) {
+    .header__menu {
+        background-color: var(--white); /* White background for mobile menu */
+        border-bottom: 1px solid var(--border-color);
+    }
+    .header__menu ul li a {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .contact__widget__item {
+        margin-bottom: 20px;
+    }
+    .contact__map iframe {
+        height: 300px; /* Adjust map height for smaller screens */
+    }
+    .footer__option__item {
+        margin-bottom: 30px;
+    }
+}
+</style>

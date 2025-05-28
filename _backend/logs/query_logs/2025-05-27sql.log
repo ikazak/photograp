@@ -44,3 +44,19 @@ success: (3JRXZ) [2025-05-27 08:50:51] select * from photographers where photogr
 success: (KYQ8T) [2025-05-27 09:13:17] select * from photographers where photographer_email = 'admin@gmail.com' and photographer_password = 'admin'
 success: (WIMH7) [2025-05-27 09:26:42] SELECT * FROM `inventory` where status = 1
 success: (CAIX4) [2025-05-27 09:26:45] select * from inventory where inventoryID = 4
+success: (3QTMB) [2025-05-27 10:00:38] SELECT * FROM `inventory` where status = 1
+success: (F4LVM) [2025-05-27 10:01:17] SELECT * FROM `inventory` where status = 1
+success: (6KGUC) [2025-05-27 10:01:35] SELECT * FROM `inventory` where status = 1
+success: (Y1GUJ) [2025-05-27 10:02:34] SELECT * FROM `inventory` where status = 1
+success: (NWGQ2) [2025-05-27 10:04:20] select * from photographers where photographer_email = 'admin@gmail.com' and photographer_password = 'admin'
+success: (75PJX) [2025-05-27 10:04:35] select * from photographers where photographer_email = 'admin@gmail.com' and photographer_password = 'admin'
+success: (OB9QX) [2025-05-27 10:40:38] SELECT * FROM `inventory` where status = 1
+success: (HN5TO) [2025-05-27 10:40:54] select * from inventory where inventoryID = 3
+success: (D4FVJ) [2025-05-27 10:44:31] SELECT * FROM `inventory` where status = 1
+success: (IXEZM) [2025-05-27 10:44:35] select * from inventory where inventoryID = 1
+success: (271UK) [2025-05-27 10:44:55] SELECT * FROM `inventory` where status = 1
+success: (XU4D2) [2025-05-27 10:45:06] SELECT * FROM `inventory` where status = 1
+success: (T36M5) [2025-05-27 10:45:07] SELECT * FROM `inventory` where status = 1
+success: (VBUCH) [2025-05-27 10:45:07] SELECT * FROM `inventory` where status = 1
+success: (J7NFQ) [2025-05-27 10:45:07] SELECT * FROM `inventory` where status = 1
+success: (UGQJB) [2025-05-27 16:50:53] SELECT * FROM `inventory` where status = 1

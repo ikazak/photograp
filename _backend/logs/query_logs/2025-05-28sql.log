@@ -1,0 +1,1 @@
+success: (IXOY5) [2025-05-28 04:20:06] SELECT * FROM `inventory` where status = 1
