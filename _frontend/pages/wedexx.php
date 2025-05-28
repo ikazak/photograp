@@ -566,9 +566,37 @@
                                 <label for="eventLocation" class="form-label">Event Location (required):</label>
                                 <input type="text" class="form-control" id="eventLocation" name="eventLocation" placeholder="City, Venue Name" required>
                             </div>
-                            <div class="mb-3">
-                                <label for="guestCount" class="form-label">Estimated Guest Count (required):</label>
-                                <input type="number" class="form-control" id="guestCount" name="guestCount" min="1" placeholder="e.g., 150" required>
+                            <div class="mb-4">
+                                <label for="howDidYouHear" class="form-label">Services</label>
+                                <select class="form-select" id="howDidYouHear" name="howDidYouHear" required>
+                                    <option value="" disabled selected>Wedding</option>
+                                    <option value="social_media">Portrait</option>
+                                    <option value="friend_referral">Event</option>
+                                    <option value="online_search">School & Milestone</option>
+                                    <option value="advertisement">Cultural & Lifestyle</option>
+                                
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <label for="howDidYouHear" class="form-label">Packages</label>
+                                <select class="form-select" id="howDidYouHear" name="howDidYouHear" required>
+                                    <option value="" disabled selected>Select an option</option>
+                                    <option value="social_media">Social Media (Facebook, Instagram, etc.)</option>
+                                    <option value="friend_referral">Friend/Family Referral</option>
+                                    <option value="online_search">Online Search (Google, Bing, etc.)</option>
+                                    <option value="advertisement">Advertisement</option>
+                                    <option value="website">Our Website</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <label for="howDidYouHear" class="form-label">Mode of Payment</label>
+                                <select class="form-select" id="howDidYouHear" name="howDidYouHear" required>
+                                    <option value="" disabled selected>Cash</option>
+                                    <option value="social_media">Gcash</option>
+                                
+                                
+                                </select>
                             </div>
                             <div class="mb-3">
                                 <label for="additionalNotes" class="form-label">Additional Notes:</label>
@@ -592,7 +620,7 @@
                                 <li class="list-group-item"><strong>How did you hear about us?:</strong> <span id="confirmHowDidYouHear"></span></li>
                                 <li class="list-group-item"><strong>Event Date:</strong> <span id="confirmEventDate"></span></li>
                                 <li class="list-group-item"><strong>Event Location:</strong> <span id="confirmEventLocation"></span></li>
-                                <li class="list-group-item"><strong>Guest Count:</strong> <span id="confirmGuestCount"></span></li>
+                               
                                 <li class="list-group-item"><strong>Additional Notes:</strong> <span id="confirmAdditionalNotes"></span></li>
                             </ul>
                             <div class="form-check">

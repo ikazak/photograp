@@ -35,7 +35,7 @@
 
 <div class="sidebar pe-4 pb-3">
     <nav class="navbar">
-        <a href="index.html" class="navbar-brand mx-4 mb-3">
+        <a href="<?=page('admin/homepage')?>" class="navbar-brand mx-4 mb-3">
             <img src="_frontend/assets/img/logop.jpg" alt="PPhotography Logo">
             <h3>PPhotography</h3>
         </a>
@@ -50,7 +50,7 @@
             </div>
         </div>
         <div class="navbar-nav w-100">
-            <a id="homepage" href="<?=page('admin/homepage')?>" class="nav-item nav-link text-dark active"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
+            <a id="homepage" href="<?=page('admin/homepage')?>" class="nav-item nav-link text-dark "><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
             <a id="profile" href="<?=page('admin/profile.php')?>" class="nav-item nav-link text-dark"><i class="fa fa-user me-2"></i>Photographers</a>
             <a id="proj" href="<?=page('admin/projmanagement.php')?>" class="nav-item nav-link text-dark"><i class="fa fa-tasks me-2"></i>Projects</a>
 
@@ -90,14 +90,14 @@
                     <a href="<?=page('admin/inventory.php')?>" class="dropdown-item text-dark">
                         <i class="fa fa-cogs me-2"></i> Equipment
                     </a>
-                    <a href="#" class="dropdown-item text-dark">
+                    <a href="<?=page('admin/tools.php')?>" class="dropdown-item text-dark">
                         <i class="fa fa-wrench me-2"></i> Tools
                     </a>
                 </div>
             </div>
 
 
-            <a id="about" href="<?=page('admin/aboutus.php')?>" class="nav-item nav-link text-dark"><i class="fa fa-users me-2"></i>About Us</a>
+            <a id="about" href="<?=page('admin/aboutus.php')?>" class="nav-item nav-link text-dark"><i class="fa fa-users me-2"></i>About </a>
             <a id="appoint" href="<?=page('admin/appointstatus.php')?>" class="nav-item nav-link text-dark"><i class="fa fa-cog me-2"></i>Settings</a>
         </div>
     </nav>

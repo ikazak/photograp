@@ -7,7 +7,7 @@
     <meta name="keywords" content="Videograph, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Videograph | Template</title>
+    <title>PPHOTOGRAPHY WEBSITE</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
@@ -72,10 +72,11 @@
                 <div class="profile-image-wrapper">
                     <img src="https://via.placeholder.com/100/9E00FF/FFFFFF?text=P1" alt="Photographer 1" class="profile-image">
                 </div>
-                <h3 class="photographer-name">Elena Photography</h3>
-                <p class="photographer-specialty">Wedding & Event Specialist</p>
-                <p class="photographer-tagline">Capturing your special moments with timeless elegance.</p>
-                <p class="photographer-location"><i class="fas fa-map-marker-alt"></i> Himamaylan City, PH</p>
+                <h3 class="photographer-name">Jamie Portrait</h3>
+                <p class="photographer-specialty">Wedding & Photograper</p>
+                <p class="photographer-tagline">Capturing the magic of your special days with a creative and personal touch. Passionate about storytelling through images.</p>
+                <p class="photographer-location"><i class="fas fa-map-marker-alt"></i>Skills:
+Portraiture Event Coverage</p>
                 <a href="#" class="btn-view-profile">View Profile</a>
             </div>
 

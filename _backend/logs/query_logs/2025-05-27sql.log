@@ -44,3 +44,97 @@ success: (3JRXZ) [2025-05-27 08:50:51] select * from photographers where photogr
 success: (KYQ8T) [2025-05-27 09:13:17] select * from photographers where photographer_email = 'admin@gmail.com' and photographer_password = 'admin'
 success: (WIMH7) [2025-05-27 09:26:42] SELECT * FROM `inventory` where status = 1
 success: (CAIX4) [2025-05-27 09:26:45] select * from inventory where inventoryID = 4
+success: (TXLFZ) [2025-05-27 09:53:33] SELECT * FROM `inventory` where status = 1
+success: (SDXYU) [2025-05-27 10:22:51] select * from photographers where photographer_email = 'admin@gmail.com' and photographer_password = 'admin'
+success: (GQKA5) [2025-05-27 11:02:59] select * from photographers where photographer_email = 'admin@gmail.com' and photographer_password = 'admin'
+success: (YZBS4) [2025-05-27 11:03:34] select * from photographers where photographer_email = 'admin@gmail.com' and photographer_password = 'admin'
+success: (C3PI6) [2025-05-27 11:05:09] select * from photographers where photographer_email = 'dsada@dasdas' and photographer_password = 'sdasd'
+success: (VDOBH) [2025-05-27 11:55:00] select * from photographers where photographer_email = 'admin@gmail.com' and photographer_password = 'admin'
+success: (479YA) [2025-05-27 11:55:14] SELECT * FROM `inventory` where status = 1
+success: (SUB5O) [2025-05-27 12:24:28] SELECT * FROM `inventory` where status = 1
+success: (XDHOV) [2025-05-27 12:24:59] SELECT * FROM `inventory` where status = 1
+success: (KF9X5) [2025-05-27 12:25:24] SELECT * FROM `inventory` where status = 1
+success: (CHVQ5) [2025-05-27 12:25:33] SELECT * FROM `inventory` where status = 1
+success: (4H6KI) [2025-05-27 12:27:20] SELECT * FROM `inventory` where status = 1
+success: (YLPJZ) [2025-05-27 12:27:34] SELECT * FROM `inventory` where status = 1
+success: (BZYFP) [2025-05-27 12:27:52] SELECT * FROM `inventory` where status = 1
+success: (MUDSW) [2025-05-27 12:28:03] SELECT * FROM `inventory` where status = 1
+success: (QMIUL) [2025-05-27 12:28:19] SELECT * FROM `inventory` where status = 1
+success: (JV1DZ) [2025-05-27 12:28:31] SELECT * FROM `inventory` where status = 1
+success: (X5WST) [2025-05-27 14:54:28] SELECT * FROM `inventory` where status = 1
+success: (XAYUV) [2025-05-27 14:58:04] SELECT * FROM `inventory` where status = 1
+success: (46BY3) [2025-05-27 14:58:28] SELECT * FROM `inventory` where status = 1
+success: (XTC3W) [2025-05-27 14:58:39] SELECT * FROM `inventory` where status = 1
+success: (SKN84) [2025-05-27 14:58:59] SELECT * FROM `inventory` where status = 1
+success: (CMNAV) [2025-05-27 14:59:12] SELECT * FROM `inventory` where status = 1
+success: (ZOUYQ) [2025-05-27 15:00:30] SELECT * FROM `inventory` where status = 1
+success: (XOFKD) [2025-05-27 15:00:34] SELECT * FROM `inventory` where status = 1
+success: (KSNC2) [2025-05-27 15:00:56] SELECT * FROM `inventory` where status = 1
+success: (E9L85) [2025-05-27 15:00:58] SELECT * FROM `inventory` where status = 1
+success: (KLYTD) [2025-05-27 16:10:26] select * from photographers where photographer_email = 'ty@gmail.com' and photographer_password = 	 543596
+success: (QV2AI) [2025-05-27 16:10:28] select * from photographers where photographer_email = 'ty@gmail.com' and photographer_password = 	 543596
+success: (8TIWL) [2025-05-27 16:10:29] select * from photographers where photographer_email = 'ty@gmail.com' and photographer_password = 	 543596
+success: (XPMN3) [2025-05-27 16:10:30] select * from photographers where photographer_email = 'ty@gmail.com' and photographer_password = 	 543596
+success: (X3I48) [2025-05-27 16:10:30] select * from photographers where photographer_email = 'ty@gmail.com' and photographer_password = 	 543596
+success: (2QAMU) [2025-05-27 16:10:31] select * from photographers where photographer_email = 'ty@gmail.com' and photographer_password = 	 543596
+success: (YX4RW) [2025-05-27 16:11:14] select * from photographers where photographer_email = 'ty@gmail.com' and photographer_password = 543596
+success: (KSMAJ) [2025-05-27 16:50:39] SELECT * FROM `inventory` where status = 1
+success: (DPBMY) [2025-05-27 16:51:39] SELECT * FROM `inventory` where status = 1
+success: (5WRZ2) [2025-05-27 16:52:02] SELECT * FROM `inventory` where status = 1
+success: (U17C5) [2025-05-27 16:52:10] SELECT * FROM `inventory` where status = 1
+success: (SA4DP) [2025-05-27 16:52:23] SELECT * FROM `inventory` where status = 1
+success: (6E57N) [2025-05-27 16:52:38] SELECT * FROM `inventory` where status = 1
+success: (C5QPU) [2025-05-27 16:52:40] SELECT * FROM `inventory` where status = 1
+success: (NGQUP) [2025-05-27 16:52:41] SELECT * FROM `inventory` where status = 1
+success: (AJHE5) [2025-05-27 16:52:41] SELECT * FROM `inventory` where status = 1
+success: (AHYR5) [2025-05-27 16:52:41] SELECT * FROM `inventory` where status = 1
+success: (6IF9G) [2025-05-27 16:52:41] SELECT * FROM `inventory` where status = 1
+success: (AO9YE) [2025-05-27 16:52:41] SELECT * FROM `inventory` where status = 1
+success: (X63NC) [2025-05-27 16:52:42] SELECT * FROM `inventory` where status = 1
+success: (D8TNW) [2025-05-27 16:52:51] SELECT * FROM `inventory` where status = 1
+success: (A5SP8) [2025-05-27 16:52:56] SELECT * FROM `inventory` where status = 1
+success: (PYNMR) [2025-05-27 16:53:21] SELECT * FROM `inventory` where status = 1
+success: (BEQSH) [2025-05-27 16:53:26] select * from inventory where inventoryID = 4
+success: (PL2QT) [2025-05-27 16:53:37] UPDATE inventory SET itemname = 'camera', rate_of_purchased = 10000, type = 'good' WHERE inventoryID = 4
+success: (LFBWU) [2025-05-27 16:53:38] SELECT * FROM `inventory` where status = 1
+success: (6HKPB) [2025-05-27 16:53:41] SELECT * FROM `inventory` where status = 1
+success: (6RDX9) [2025-05-27 16:54:22] SELECT * FROM `inventory` where status = 1
+success: (U15HV) [2025-05-27 16:54:25] SELECT * FROM `inventory` where status = 1
+success: (WHV41) [2025-05-27 16:54:34] SELECT * FROM `inventory` where status = 1
+success: (N9ORD) [2025-05-27 16:54:36] SELECT * FROM `inventory` where status = 1
+success: (V1YPN) [2025-05-27 16:54:37] SELECT * FROM `inventory` where status = 1
+success: (BGK5T) [2025-05-27 16:55:06] SELECT * FROM `inventory` where status = 1
+success: (K9MXP) [2025-05-27 16:55:08] SELECT * FROM `inventory` where status = 1
+success: (XJ9NL) [2025-05-27 16:55:11] SELECT * FROM `inventory` where status = 1
+success: (UPXTC) [2025-05-27 16:56:03] SELECT * FROM `inventory` where status = 1
+success: (XN3EV) [2025-05-27 16:56:05] SELECT * FROM `inventory` where status = 1
+success: (KRTDQ) [2025-05-27 16:56:21] SELECT * FROM `inventory` where status = 1
+success: (W7EHL) [2025-05-27 16:56:23] SELECT * FROM `inventory` where status = 1
+success: (IY358) [2025-05-27 16:56:23] SELECT * FROM `inventory` where status = 1
+success: (UAPBD) [2025-05-27 16:56:23] SELECT * FROM `inventory` where status = 1
+success: (1EGHB) [2025-05-27 16:56:50] SELECT * FROM `inventory` where status = 1
+success: (2HKOY) [2025-05-27 16:57:08] SELECT * FROM `inventory` where status = 1
+success: (YDKVQ) [2025-05-27 16:58:06] SELECT * FROM `inventory` where status = 1
+success: (NF5LQ) [2025-05-27 16:58:07] SELECT * FROM `inventory` where status = 1
+success: (3WODC) [2025-05-27 16:58:07] SELECT * FROM `inventory` where status = 1
+success: (MBG8F) [2025-05-27 16:58:07] SELECT * FROM `inventory` where status = 1
+success: (ICY3O) [2025-05-27 16:58:07] SELECT * FROM `inventory` where status = 1
+success: (WU2SZ) [2025-05-27 16:58:21] SELECT * FROM `inventory` where status = 1
+success: (5QMVH) [2025-05-27 16:58:49] SELECT * FROM `inventory` where status = 1
+success: (UD1Z7) [2025-05-27 16:59:26] SELECT * FROM `inventory` where status = 1
+success: (SU41T) [2025-05-27 16:59:30] SELECT * FROM `inventory` where status = 1
+success: (WH1KA) [2025-05-27 16:59:34] SELECT * FROM `inventory` where status = 1
+success: (FZRJB) [2025-05-27 16:59:55] SELECT * FROM `inventory` where status = 1
+success: (6YN4W) [2025-05-27 17:00:30] SELECT * FROM `inventory` where status = 1
+success: (WOCQG) [2025-05-27 17:01:32] SELECT * FROM `inventory` where status = 1
+success: (9KV2J) [2025-05-27 17:03:59] SELECT * FROM `inventory` where status = 1
+success: (JY2OW) [2025-05-27 17:04:02] SELECT * FROM `inventory` where status = 1
+success: (WGKIJ) [2025-05-27 17:04:50] SELECT * FROM `inventory` where status = 1
+success: (W9S1N) [2025-05-27 17:05:12] SELECT * FROM `inventory` where status = 1
+success: (9HE7M) [2025-05-27 17:06:10] SELECT * FROM `inventory` where status = 1
+success: (3NXWE) [2025-05-27 17:06:25] SELECT * FROM `inventory` where status = 1
+success: (ZT8CL) [2025-05-27 17:06:31] SELECT * FROM `inventory` where status = 1
+success: (Y5Q6K) [2025-05-27 17:06:37] SELECT * FROM `inventory` where status = 1
+success: (SZ5X1) [2025-05-27 17:06:38] SELECT * FROM `inventory` where status = 1
+success: (8ZTXE) [2025-05-27 17:17:08] SELECT * FROM `inventory` where status = 1
+success: (9P2US) [2025-05-27 17:18:31] SELECT * FROM `inventory` where status = 1

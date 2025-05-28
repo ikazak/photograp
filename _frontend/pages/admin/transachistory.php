@@ -20,14 +20,14 @@ if (!function_exists('assets')) {
         .page-header-trans h1 { font-size: 2.2rem; font-weight: 600; color: #212529; }
         .header-actions-group { display: flex; align-items: center; gap: 15px; }
         .export-btn, .time-filter-btn, .add-transaction-btn { background-color: #fff; color: #495057; border: 1px solid #ced4da; padding: 8px 15px; border-radius: 6px; font-size: 0.9rem; font-weight: 500; cursor: pointer; transition: background-color 0.2s ease, border-color 0.2s ease; }
-        .add-transaction-btn { background-color: #20c997; color: white; border-color: #20c997; }
-        .add-transaction-btn:hover { background-color: #1baa80; border-color: #1baa80;}
+        .add-transaction-btn { background-color: red; color: white; border-color: red; }
+        .add-transaction-btn:hover { background-color: red; border-color: red;}
         .export-btn:hover, .time-filter-btn:hover { background-color: #f8f9fa; border-color: #adb5bd; }
         .time-filter-btn i { margin-left: 5px; }
         .transaction-tabs { margin-bottom: 20px; border-bottom: 1px solid #dee2e6; }
         .transaction-tabs ul { list-style: none; display: flex; gap: 25px; padding-left: 0; }
         .transaction-tabs li a { text-decoration: none; color: #6c757d; padding: 10px 0; display: inline-block; font-size: 0.95rem; font-weight: 500; position: relative; cursor: pointer; }
-        .transaction-tabs li a.active { color: #20c997; border-bottom: 2px solid #20c997; }
+        .transaction-tabs li a.active { color: red; border-bottom: 2px solid red; }
         .transaction-tabs li a:not(.active):hover { color: #495057; }
         .transaction-list { display: grid; grid-template-columns: 1fr 0.8fr 1.5fr 1fr 1.5fr 1fr 0.3fr; gap: 10px 15px; align-items: center; }
         .transaction-list-header { display: contents; font-size: 0.75rem; color: #6c757d; font-weight: 600; text-transform: uppercase; }
@@ -71,8 +71,8 @@ if (!function_exists('assets')) {
         .simple-modal-footer .btn { padding: 10px 20px; border-radius: 6px; cursor: pointer; font-size: 0.9rem; font-weight:500; border: 1px solid transparent; }
         .simple-modal-footer .btn-secondary-modal { background-color: #fff; color: #495057; border-color:#ced4da; }
         .simple-modal-footer .btn-secondary-modal:hover { background-color: #f8f9fa; }
-        .simple-modal-footer .btn-primary-modal { background-color: #20c997; color: white; border-color:#20c997; }
-        .simple-modal-footer .btn-primary-modal:hover { background-color: #1baa80; border-color:#1baa80; }
+        .simple-modal-footer .btn-primary-modal { background-color:red; color: white; border-color:#20c997; }
+        .simple-modal-footer .btn-primary-modal:hover { background-color:red; border-color:#1baa80; }
 
         @media (max-width: 992px) { .transaction-list { grid-template-columns: 1fr 1fr 1.5fr 1fr 1.5fr 1fr 0.5fr; } .page-header-trans h1 { font-size: 2rem; } }
         @media (max-width: 768px) { .page-header-trans { flex-direction: column; align-items: flex-start; gap: 15px; } .header-actions-group { width: 100%; flex-direction: column; align-items: stretch; } .export-btn, .time-filter-btn, .add-transaction-btn { text-align: center; } .transaction-tabs ul { gap: 15px; flex-wrap: wrap; } .transaction-list { font-size: 0.85rem; display: block; overflow-x: auto; white-space: nowrap; } .transaction-list-header, .transaction-row { display: grid; grid-template-columns: 120px 100px 180px 120px 150px 120px 60px; min-width: 850px; } .transaction-list-header .col, .transaction-row .col { white-space: normal; } .simple-modal-content { margin: 5% auto; width: 95%;} }

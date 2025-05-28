@@ -7,7 +7,7 @@
     <meta name="keywords" content="Videograph, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Videograph | Template</title>
+    <title>PPHOTOGRAPHY WEBSITE</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
@@ -42,7 +42,7 @@
                     <div class="breadcrumb__text">
                         <h2>Our Sevices</h2>
                         <div class="breadcrumb__links">
-                            <a href="#">Home</a>
+                            <a href="<?=page('home.php')?>">Home</a>
                             <span>Services</span>
                         </div>
                     </div>
@@ -59,10 +59,12 @@
                     <ul class="portfolio__filter">
                         <li class="active" data-filter="*">All</li>
                         <li data-filter=".branding">Wedding</li>
-                        <li data-filter=".digital-marketing">Digital marketing</li>
-                        <li data-filter=".web">Web</li>
-                        <li data-filter=".photography">Photography</li>
-                        <li data-filter=" .ecommerce">eCommerce</li>
+                        <li data-filter=".digital-marketing">
+Portrait</li>
+                        <li data-filter=".web">Event</li>
+                        <li data-filter=".photography">
+School & Milestone</li>
+                        <li data-filter=" .ecommerce">Cultural & Lifestyle  </li>
                     </ul>
                 </div>
             </div>
@@ -301,8 +303,7 @@
                             <script>
                                 document.write(new Date().getFullYear());
                             </script>
-                            All rights reserved | This template is made with <i class="fa fa-heart-o"
-                                aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                            
                         </p>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </div>

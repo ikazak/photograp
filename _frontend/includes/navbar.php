@@ -80,7 +80,7 @@
                             <img class="rounded-circle me-lg-2" id="navimg" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
                             <span class="d-none d-lg-inline-flex" id="navname">ADMIN</span>
                         </a>
-                        <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
+                        <div class="dropdown-menu dropdown-menu-end bg-white border-0 rounded-0 rounded-bottom m-0">
                             <a href="#" class="dropdown-item">My Profile</a>
                             <a href="#" class="dropdown-item">Settings</a>
                             <a href="<?=page('loginpage.php')?>" onclick="return confirm('Are you sure you want to log out?');" class="dropdown-item">Log Out</a>
