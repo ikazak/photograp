@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>4-Step Multi-step Form (Full Screen)</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <?php code_library() ?>
     <style>
-        html, body {
-            height: 100%; /* Make html and body fill the viewport height */
+        html,
+        body {
+            height: 100%;
+            /* Make html and body fill the viewport height */
             margin: 0;
             padding: 0;
-            overflow-x: hidden; /* Prevent horizontal scrollbar */
+            overflow-x: hidden;
+            /* Prevent horizontal scrollbar */
         }
 
         body {
@@ -22,25 +27,34 @@
 
         .multi-step-form-container {
             background-color: #fff;
-            width: 100%; /* Ensure it takes full available width */
-            border-radius: 0; /* No rounded corners for full screen */
-            box-shadow: none; /* No box shadow for a flat, full-screen look */
-            padding: 40px 0; /* Adjust padding as needed for internal content */
-            min-height: 100vh; /* Make container fill full viewport height */
+            width: 100%;
+            /* Ensure it takes full available width */
+            border-radius: 0;
+            /* No rounded corners for full screen */
+            box-shadow: none;
+            /* No box shadow for a flat, full-screen look */
+            padding: 40px 0;
+            /* Adjust padding as needed for internal content */
+            min-height: 100vh;
+            /* Make container fill full viewport height */
 
             /* To center content vertically within the full-screen container */
             display: flex;
             flex-direction: column;
-            justify-content: center; /* Center content vertically */
-            align-items: center; /* Center content horizontally */
+            justify-content: center;
+            /* Center content vertically */
+            align-items: center;
+            /* Center content horizontally */
         }
 
         /* Inner content wrapper for better padding control */
         .form-inner-wrapper {
             /* Limit the content width inside the full screen container */
-            max-width: 960px; /* Adjust max-width for better readability on large screens */
+            max-width: 960px;
+            /* Adjust max-width for better readability on large screens */
             width: 100%;
-            padding: 0 20px; /* Horizontal padding to prevent content from touching edges */
+            padding: 0 20px;
+            /* Horizontal padding to prevent content from touching edges */
         }
 
         .form-steps {
@@ -80,13 +94,15 @@
         }
 
         .step-indicator.active {
-            background-color: #007bff; /* Primary color for active step */
+            background-color: #007bff;
+            /* Primary color for active step */
             color: #fff;
             border-color: #007bff;
         }
 
         .step-indicator.completed {
-            background-color: #28a745; /* Success color for completed step */
+            background-color: #28a745;
+            /* Success color for completed step */
             color: #fff;
             border-color: #28a745;
         }
@@ -96,7 +112,8 @@
         }
 
         .step-indicator.completed span::after {
-            content: '\f00c'; /* Font Awesome checkmark icon */
+            content: '\f00c';
+            /* Font Awesome checkmark icon */
             font-family: 'Font Awesome 6 Free';
             font-weight: 900;
             font-size: 1.2rem;
@@ -107,7 +124,8 @@
         /* Step Titles below indicators */
         .step-title {
             position: absolute;
-            top: calc(100% + 5px); /* Position below indicator */
+            top: calc(100% + 5px);
+            /* Position below indicator */
             left: 50%;
             transform: translateX(-50%);
             white-space: nowrap;
@@ -115,20 +133,24 @@
             color: #6c757d;
             transition: color 0.3s ease;
         }
-        .step-indicator.active + .step-title {
+
+        .step-indicator.active+.step-title {
             color: #007bff;
             font-weight: 600;
         }
-        .step-indicator.completed + .step-title {
+
+        .step-indicator.completed+.step-title {
             color: #28a745;
         }
 
         .form-step {
-            display: none; /* Hide all steps by default */
+            display: none;
+            /* Hide all steps by default */
         }
 
         .form-step.active {
-            display: block; /* Show active step */
+            display: block;
+            /* Show active step */
         }
 
         .form-navigation {
@@ -148,6 +170,7 @@
             background-color: #007bff;
             border-color: #007bff;
         }
+
         .form-navigation .btn-primary:hover {
             background-color: #0056b3;
             border-color: #0056b3;
@@ -157,6 +180,7 @@
             background-color: #6c757d;
             border-color: #6c757d;
         }
+
         .form-navigation .btn-secondary:hover {
             background-color: #545b62;
             border-color: #545b62;
@@ -165,37 +189,49 @@
         /* Responsive adjustments */
         @media (max-width: 768px) {
             .multi-step-form-container {
-                padding: 30px 0; /* Adjusted padding for smaller screens */
+                padding: 30px 0;
+                /* Adjusted padding for smaller screens */
             }
+
             .form-inner-wrapper {
-                padding: 0 15px; /* More specific padding for smaller screens */
+                padding: 0 15px;
+                /* More specific padding for smaller screens */
             }
+
             .form-steps {
                 flex-wrap: wrap;
                 justify-content: center;
-                gap: 15px 0; /* Space between rows for indicators */
+                gap: 15px 0;
+                /* Space between rows for indicators */
                 margin-bottom: 30px;
             }
+
             .step-indicator {
                 width: 35px;
                 height: 35px;
                 font-size: 1rem;
             }
-            .step-indicator span, .step-indicator.completed span::after {
+
+            .step-indicator span,
+            .step-indicator.completed span::after {
                 font-size: 1rem;
             }
+
             .step-title {
                 font-size: 0.8rem;
                 top: calc(100% + 2px);
             }
+
             .form-navigation {
                 flex-direction: column;
                 gap: 15px;
             }
+
             .form-navigation .btn {
                 width: 100%;
             }
         }
+
         .session-plan-section {
             padding: 60px 0;
         }
@@ -205,7 +241,8 @@
             font-weight: 600;
             color: #333;
             margin-bottom: 40px;
-            margin-left: 15px; /* Aligns with container padding */
+            margin-left: 15px;
+            /* Aligns with container padding */
         }
 
         .content-card {
@@ -213,7 +250,8 @@
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
             padding: 30px;
-            margin-bottom: 30px; /* Space between cards if stacked or for spacing */
+            margin-bottom: 30px;
+            /* Space between cards if stacked or for spacing */
         }
 
         /* Left Column (Session Details) Styling */
@@ -230,7 +268,8 @@
         }
 
         .session-details-card .form-control[type="date"] {
-            height: 50px; /* Make date input taller */
+            height: 50px;
+            /* Make date input taller */
             border-radius: 8px;
         }
 
@@ -244,14 +283,17 @@
             font-size: 0.95rem;
             color: #555;
         }
+
         .studio-schedule-notes ul {
             list-style: none;
             padding-left: 0;
             margin-bottom: 0;
         }
+
         .studio-schedule-notes li {
             margin-bottom: 5px;
         }
+
         .studio-schedule-notes li:last-child {
             margin-bottom: 0;
         }
@@ -260,23 +302,28 @@
         .preferred-time-group .form-check {
             margin-bottom: 10px;
         }
+
         .preferred-time-group .form-check-input {
             width: 1.2em;
             height: 1.2em;
             margin-top: 0.25em;
             border: 2px solid #ccc;
         }
+
         .preferred-time-group .form-check-input:checked {
-            background-color: #e49b00; /* Gold/orange accent color */
+            background-color: #e49b00;
+            /* Gold/orange accent color */
             border-color: #e49b00;
         }
+
         .preferred-time-group .form-check-label {
             font-size: 1rem;
             color: #333;
         }
 
         .session-details-card .btn-next {
-            background-color: #e49b00; /* Gold/orange accent color */
+            background-color: #e49b00;
+            /* Gold/orange accent color */
             border-color: #e49b00;
             color: #fff;
             padding: 12px 40px;
@@ -286,8 +333,10 @@
             margin-top: 30px;
             transition: background-color 0.2s ease;
         }
+
         .session-details-card .btn-next:hover {
-            background-color: #c08000; /* Darker shade on hover */
+            background-color: #c08000;
+            /* Darker shade on hover */
             border-color: #c08000;
         }
 
@@ -304,6 +353,7 @@
             color: #555;
             font-size: 0.95rem;
         }
+
         .booking-location-card p strong {
             font-weight: 600;
             color: #333;
@@ -315,24 +365,31 @@
             color: #333;
             margin-bottom: 5px;
         }
+
         .booking-package-card p {
             font-size: 1rem;
-            color: #e49b00; /* Accent color for price */
+            color: #e49b00;
+            /* Accent color for price */
             font-weight: 700;
             margin-bottom: 15px;
         }
+
         .booking-package-card .inclusion-list {
             list-style: none;
             padding-left: 0;
             font-size: 0.95rem;
             color: #555;
         }
+
         .booking-package-card .inclusion-list li {
             margin-bottom: 5px;
         }
+
         .booking-package-card .inclusion-list li::before {
-            content: '\2022'; /* Bullet point */
-            color: #e49b00; /* Accent color for bullet */
+            content: '\2022';
+            /* Bullet point */
+            color: #e49b00;
+            /* Accent color for bullet */
             font-weight: bold;
             display: inline-block;
             width: 1em;
@@ -345,10 +402,12 @@
                 font-size: 2rem;
                 margin-bottom: 30px;
             }
+
             .session-details-card,
             .booking-details-card {
                 padding: 25px;
             }
+
             .session-details-card h5 {
                 font-size: 1.3rem;
             }
@@ -358,20 +417,26 @@
             .session-plan-section {
                 padding: 40px 0;
             }
+
             .main-heading {
                 font-size: 1.8rem;
                 text-align: center;
                 margin-left: 0;
                 margin-bottom: 30px;
             }
+
             .content-card {
-                margin-bottom: 20px; /* Less space between cards on smaller screens */
+                margin-bottom: 20px;
+                /* Less space between cards on smaller screens */
             }
+
             .session-details-card .btn-next {
-                width: 100%; /* Full width button on mobile */
+                width: 100%;
+                /* Full width button on mobile */
                 padding: 10px 20px;
                 font-size: 1rem;
             }
+
             /* Stack right column cards on top of each other */
             .right-column-cards {
                 margin-top: 20px;
@@ -385,15 +450,19 @@
             border-radius: 8px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         }
+
         .personal-info-section .form-label {
             font-weight: 500;
             color: #333;
         }
-        .personal-info-section .form-control, .personal-info-section .form-select {
+
+        .personal-info-section .form-control,
+        .personal-info-section .form-select {
             border-radius: 5px;
             border: 1px solid #ced4da;
             padding: 10px 12px;
         }
+
         .personal-info-section .input-group-text {
             background-color: #e9ecef;
             border-right: none;
@@ -401,20 +470,51 @@
             border-bottom-left-radius: 5px;
             color: #495057;
         }
-        .personal-info-section .input-group > .form-control {
+
+        .personal-info-section .input-group>.form-control {
             border-top-left-radius: 0;
             border-bottom-left-radius: 0;
         }
-
     </style>
 </head>
+
 <body>
+    
+    <div class="modal fade" id="gcashQrModal" tabindex="-1" aria-labelledby="gcashQrModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                
+                <div class="modal-header bg-red-500 text-white rounded-t-xl">
+                    <h5 class="modal-title text-white font-semibold" id="gcashQrModalLabel">GCash Payment</h5>
+                    <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body p-6 text-center">
+                    <p class="text-gray-700 mb-4">Scan the QR code below to complete your payment via GCash:</p>
+                    <img src="<?= assets()?>/img/R.png" height="300" width="300" alt="GCash QR Code" class="mx-auto rounded-lg shadow-sm mb-4">
+                    <p class="text-gray-600 text-sm">NAME CODE: TY*****E M*</p>
+                    <label style="margin-top: 10px; witdh: 200px;" for="addinventoryImage" class="form-label">Ref. number</label>
+                    <input type="text" name="image" class="form-control bg-secondary text-white border-0" id="addinventoryImage">
+                    <label style="margin-top: 10px; witdh: 200px;" for="addinventoryImage" class="form-label">Sender Name</label>
+                    <input type="text" name="image" class="form-control bg-secondary text-white border-0" id="addinventoryImage">
+
+                    
+                </div>
+                <div class="modal-footer justify-center">
+                    <button type="button" id="paybtn" class="btn btn-primary" data-bs-dismiss="modal">submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     
+
     <div class="multi-step-form-container">
         <div class="form-inner-wrapper">
             <form id="multiStepForm">
+                
                 <div class="form-steps">
                     <div class="position-relative">
                         <div class="step-indicator active" data-step="1"><span>1</span></div>
@@ -437,7 +537,8 @@
                 <div style="width: 100%;" class="form-content">
                     <div class="form-step active" data-step="1">
                         <section class="session-plan-section">
-                            <div class="container-fluid"> <h2 class="main-heading">Let's plan your session</h2>
+                            <div class="container-fluid">
+                                <h2 class="main-heading">Let's plan your session</h2>
                                 <div class="row">
                                     <div class="col-lg-8">
                                         <div class="content-card session-details-card">
@@ -566,9 +667,36 @@
                                 <label for="eventLocation" class="form-label">Event Location (required):</label>
                                 <input type="text" class="form-control" id="eventLocation" name="eventLocation" placeholder="City, Venue Name" required>
                             </div>
-                            <div class="mb-3">
-                                <label for="guestCount" class="form-label">Estimated Guest Count (required):</label>
-                                <input type="number" class="form-control" id="guestCount" name="guestCount" min="1" placeholder="e.g., 150" required>
+                            <div class="mb-4">
+                                <label for="howDidYouHear" class="form-label">Services</label>
+                                <select class="form-select" id="howDidYouHear" name="howDidYouHear" required>
+                                    <option value="" disabled selected>Wedding</option>
+                                    <option value="social_media">Portrait</option>
+                                    <option value="friend_referral">Event</option>
+                                    <option value="online_search">School & Milestone</option>
+                                    <option value="advertisement">Cultural & Lifestyle</option>
+
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <label for="howDidYouHear" class="form-label">Packages</label>
+                                <select class="form-select" id="howDidYouHear" name="howDidYouHear" required>
+                                    <option value="" disabled selected>Select an option</option>
+                                    <option value="social_media">Social Media (Facebook, Instagram, etc.)</option>
+                                    <option value="friend_referral">Friend/Family Referral</option>
+                                    <option value="online_search">Online Search (Google, Bing, etc.)</option>
+                                    <option value="advertisement">Advertisement</option>
+                                    <option value="website">Our Website</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <label for="howDidYouHear" class="form-label">Mode of Payment</label>
+                                <select id="paymentMethod" class="form-select block w-full px-3 py-2 text-base text-gray-900 border border-gray-300 rounded-lg focus:ring-red-500 focus:border-red-500 bg-gray-50">
+                                    <option value="">-- Please select --</option>
+                                    <option value="cash">Cash</option>
+                                    <option value="gcash">GCash</option>
+                                </select>
                             </div>
                             <div class="mb-3">
                                 <label for="additionalNotes" class="form-label">Additional Notes:</label>
@@ -592,7 +720,7 @@
                                 <li class="list-group-item"><strong>How did you hear about us?:</strong> <span id="confirmHowDidYouHear"></span></li>
                                 <li class="list-group-item"><strong>Event Date:</strong> <span id="confirmEventDate"></span></li>
                                 <li class="list-group-item"><strong>Event Location:</strong> <span id="confirmEventLocation"></span></li>
-                                <li class="list-group-item"><strong>Guest Count:</strong> <span id="confirmGuestCount"></span></li>
+
                                 <li class="list-group-item"><strong>Additional Notes:</strong> <span id="confirmAdditionalNotes"></span></li>
                             </ul>
                             <div class="form-check">
@@ -615,6 +743,30 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Get references to the select element and the modal
+        const paymentMethodSelect = document.getElementById('paymentMethod');
+        const gcashQrModal = new bootstrap.Modal(document.getElementById('gcashQrModal'));
+
+        // Add an event listener to the select element
+        paymentMethodSelect.addEventListener('change', function() {
+            // Check if the selected value is 'gcash'
+            if (this.value === 'gcash') {
+                // Show the modal
+                gcashQrModal.show();
+            } else {
+                // If another option is selected, ensure the modal is hidden
+                gcashQrModal.hide();
+            }
+        });
+
+        // Optional: Reset dropdown when modal is closed
+        document.getElementById('gcashQrModal').addEventListener('hidden.bs.modal', function() {
+         
+        });
+    </script>
+
     <script>
         let currentStep = 1;
         const formSteps = document.querySelectorAll('.form-step');
@@ -767,4 +919,19 @@
         showStep(currentStep);
     </script>
 </body>
+
 </html>
+
+
+<script>
+    document.querySelector("#paybtn").addEventListener("click", function(){
+        event.preventDefault();
+        Swal.fire({
+            title: "Paid",
+            text: "Thank you for your payment",
+            icon: "success"
+        }).then(()=>{
+            // reload();
+        });
+    });
+</script>

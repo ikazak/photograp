@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>404 | Page Not Found</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="shortcut icon" href="<?=assets('bfavicon.png')?>" type="image/x-icon">
   <style>
     body {
       background-color: #000;
@@ -55,7 +56,7 @@
     <h1 class="text-6xl font-bold mb-6 terminal-text">404</h1>
     <p class="text-2xl mb-4">Oops... Page <?=htmlspecialchars($get)?> Not Found</p>
     <p class="text-lg text-green-400 mb-8">It seems you've stumbled into the void. Return before the system notices...</p>
-    <a href="/" class="border border-green-400 px-6 py-2 hover:bg-green-600 transition">Return to Mainframe</a>
+    <a href="<?=rootpath?>" class="border border-green-400 px-6 py-2 hover:bg-green-600 transition">Return to Mainframe</a>
   </div>
 </body>
 </html>

@@ -1,4 +1,0 @@
-203053 service/add.php: (KORUP) [2025-05-26 20:30:53] Undefined variable $service_id at line 11 in C:\XboxGames\Xammp\htdocs\photograp\_backend\_routes\Service\add.php
-203903 service/add.php: (7T2N4) [2025-05-26 20:39:03] Call to undefined function execute_query_row() at line 38 in C:\XboxGames\Xammp\htdocs\photograp\_backend\_routes\Service\add.php
-204141 service/add.php: (ECB7S) [2025-05-26 20:41:41] Call to undefined function execute_query_row() at line 46 in C:\XboxGames\Xammp\htdocs\photograp\_backend\_routes\Service\add.php
-204837 service/add.php: (237AM) [2025-05-26 20:48:37] Undefined variable $service_id at line 11 in C:\XboxGames\Xammp\htdocs\photograp\_backend\_routes\Service\add.php

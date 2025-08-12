@@ -1,2 +1,0 @@
-success: (IXOY5) [2025-05-28 04:20:06] SELECT * FROM `inventory` where status = 1
-success: (NUP7M) [2025-05-28 13:48:58] select * from photographers where photographer_email = 'ty@gmail.com' and photographer_password = 543596

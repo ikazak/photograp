@@ -33,7 +33,7 @@
                 <div class="col-lg-2">
                     <div class="header__logo">
                         <a href="<?=page('home.php')?>" style="display: flex;vertical-align:middle; justify-content: flex-start; align-items: center;">
-                            <img src="https://scontent.fceb1-3.fna.fbcdn.net/v/t39.30808-6/402092939_810649211068918_2979425544930041397_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEtfA61NCB4UHIZMfI1bpF8XAEZcMQR5BNcARlwxBHkE7mRBZUSAD4nfg_jQKfRhr4VpmDkpYkgfft0RK83yeTE&_nc_ohc=M4gakrLhVfEQ7kNvwEVAo91&_nc_oc=AdkgAiQUczwm21yj-Spd4qg7Ei_UzMNv4yTPKrJLkA1c8qixHaAZpsI1aolkQvjTUG8&_nc_zt=23&_nc_ht=scontent.fceb1-3.fna&_nc_gid=NY0VOb5f7ZziSAt-R0HnGg&oh=00_AfJGTXzG6hwyzSNDbZpZGLEUL6wrAREcTBZ7ZInnmPOr-Q&oe=6830C8A7" height="50" width="50" alt="Logo">
+                            <img src="<?=assets()?>/img/logop.jpg" height="50" width="50" alt="Logo">
                             <b style="color:#343a40;font-size:20px;padding-left:10px;">PPhotography</b>
                         </a>
                     </div>
@@ -171,98 +171,32 @@
     </section>
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0"></script>
-    <section class="work bg-light">
-        <div class="work__gallery">
-            <div class="grid-sizer"></div>
-            <div class="work__item wide__item set-bg" data-setbg="<?=assets()?>/phograph/img/work/work-1.jpg">
-                <a href="https://www.youtube.com/watch?v=vUFT6Zh2psY" class="play-btn video-popup"><i
-                            class="fa fa-play"></i></a>
-                <div class="work__item__hover bg-white">
-                    <h4 class="text-dark">VIP Auto Tires & Service</h4>
-                    <ul>
-                        <li class="text-dark">eCommerce</li>
-                        <li class="text-dark">Magento</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="work__item small__item set-bg" data-setbg="<?=assets()?>/phograph/img/work/work-2.jpg">
-                <a href="https://www.youtube.com/watch?v=eTl2Cxb74r0" class="play-btn video-popup"><i
-                            class="fa fa-play"></i></a>
-            </div>
-            <div class="work__item small__item set-bg" data-setbg="<?=assets()?>/phograph/img/work/work-3.jpg">
-                <a href="https://www.youtube.com/watch?v=qcTG5NXzuR0" class="play-btn video-popup"><i
-                            class="fa fa-play"></i></a>
-            </div>
-            <div class="work__item large__item set-bg" data-setbg="<?=assets()?>/phograph/img/work/work-4.jpg">
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
-                            class="fa fa-play"></i></a>
-                <div class="work__item__hover bg-white">
-                    <h4 class="text-dark">VIP Auto Tires & Service</h4>
-                    <ul>
-                        <li class="text-dark">eCommerce</li>
-                        <li class="text-dark">Magento</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="work__item small__item set-bg" data-setbg="<?=assets()?>/phograph/img/work/work-5.jpg">
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
-                            class="fa fa-play"></i></a>
-            </div>
-            <div class="work__item small__item set-bg" data-setbg="<?=assets()?>/phograph/img/work/work-6.jpg">
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
-                            class="fa fa-play"></i></a>
-            </div>
-            <div class="work__item wide__item set-bg" data-setbg="<?=assets()?>/phograph/img/work/work-7.jpg">
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
-                            class="fa fa-play"></i></a>
-                <div class="work__item__hover bg-white">
-                    <h4 class="text-dark">VIP Auto Tires & Service</h4>
-                    <ul>
-                        <li class="text-dark">eCommerce</li>
-                        <li class="text-dark">Magento</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="counter bg-white">
-        <div class="container">
+    
+    <section class="counter bg-white spad"> <div class="container">
             <div class="counter__content">
                 <div class="row">
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="counter__item">
                             <div class="counter__item__text">
-                                <img src="<?=assets()?>/phograph/img/icons/ci-1.png" alt="">
-                                <h2 class="counter_num text-dark">230</h2>
-                                <p class="text-dark">Compled Projects</p>
-                            </div>
+                                <img src="<?=assets()?>/phograph/img/icons/ci-1.png" alt=""> <h2 class="counter_num text-danger">230</h2> <p class="text-dark">Compled Projects</p> </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="counter__item second__item">
                             <div class="counter__item__text">
-                                <img src="<?=assets()?>/phograph/img/icons/ci-2.png" alt="">
-                                <h2 class="counter_num text-dark">1068</h2>
-                                <p class="text-dark">Happy clients</p>
-                            </div>
+                                <img src="<?=assets()?>/phograph/img/icons/ci-2.png" alt=""> <h2 class="counter_num text-danger">1068</h2> <p class="text-dark">Happy clients</p> </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="counter__item third__item">
                             <div class="counter__item__text">
-                                <img src="<?=assets()?>/phograph/img/icons/ci-3.png" alt="">
-                                <h2 class="counter_num text-dark">230</h2>
-                                <p class="text-dark">Perspective clients</p>
-                            </div>
+                                <img src="<?=assets()?>/phograph/img/icons/ci-3.png" alt=""> <h2 class="counter_num text-danger">230</h2> <p class="text-dark">Perspective clients</p> </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="counter__item four__item">
                             <div class="counter__item__text">
-                                <img src="<?=assets()?>/phograph/img/icons/ci-4.png" alt="">
-                                <h2 class="counter_num text-dark">230</h2>
-                                <p class="text-dark">Compled Projects</p>
-                            </div>
+                                <img src="<?=assets()?>/phograph/img/icons/ci-4.png" alt=""> <h2 class="counter_num text-danger">230</h2> <p class="text-dark">Compled Projects</p> </div>
                         </div>
                     </div>
                 </div>
@@ -382,3 +316,50 @@
 </body>
 
 </html>
+<script>
+        window.addEventListener("load", ()=>{
+            $page = "<?=current_page()?>";
+            if($page == "home"){
+                document.querySelector("#hm").classList.add("active");
+            }
+            if($page == "about"){
+                document.querySelector("#about").classList.add("active");
+            }
+            if($page == "portfolio"){
+                document.querySelector("#port").classList.add("active");
+            }
+            if($page == "services"){
+                // Corrected selector here, assuming #serv is the correct ID for services link
+                document.querySelector("#serv").classList.add("active");
+            }
+            if($page == "contact"){
+                document.querySelector("#cont").classList.add("active");
+            }
+
+        });
+    </script>
+<style>
+    /* Services Section - Icon Coloring */
+.services__item__icon {
+    /* If the icons are PNG/JPG, try to shift their color to red */
+    filter: hue-rotate(200deg) saturate(2) brightness(0.8) sepia(1) saturate(100) hue-rotate(300deg);
+    /* The specific filter values might need tweaking depending on the original icon color */
+    /* You can use online CSS filter generators or browser developer tools to fine-tune this */
+    /* Example: if icons are originally blue, this filter aims to shift them towards red */
+}
+
+/* If you ever switch to Font Awesome or similar icon fonts, this rule would apply */
+.services__item__icon i {
+    color: var(--theme-red); /* Uses your defined red variable */
+}
+
+/* Specific styling for the 'red-border' class you added to the last icon */
+.services__item__icon.red-border {
+    border: 1px solid var(--theme-red); /* Adds a red border */
+    padding: 10px; /* Adjust padding as needed for the border */
+    border-radius: 50%; /* Makes it circular if desired */
+    display: inline-flex; /* Ensures proper alignment for circular border */
+    align-items: center;
+    justify-content: center;
+}
+</style>

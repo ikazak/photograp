@@ -4,6 +4,7 @@
                 <div class="col-lg-2">
                     <div class="header__logo">
                         <a href="<?=page('home.php')?>" style="display: flex;vertical-align:middle; justify-content: flex-start; align-items: center;">
+                            <img src="<?=assets()?>/img/logop.jpg" height="50" width="50" alt="Logo">
                             <b style="color:#343a40;font-size:20px;padding-left:10px;">PPhotography</b>
                         </a>
                     </div>

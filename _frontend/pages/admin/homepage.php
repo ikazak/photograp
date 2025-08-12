@@ -44,7 +44,7 @@
                               <i class="fas fa-users fa-3x text-primary"></i>
                             <div class="ms-3">
                                 <p class="mb-2">Total Clients</p>
-                                <h6 class="mb-0"></h6>
+                                <h6 class="mb-0">12</h6>
                             </div>
                         </div>
                     </div>
@@ -63,7 +63,7 @@
                               <i class="fa fa-chart-pie fa-3x text-primary"></i>
                             <div class="ms-3">
                                 <p class="mb-2">Completed Project</p>
-                                <h6 class="mb-0"></h6>
+                                <h6 class="mb-0">32 </h6>
                             </div>
                         </div>
                     </div>

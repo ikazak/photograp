@@ -7,7 +7,7 @@
     <meta name="keywords" content="Videograph, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Videograph | Template</title>
+    <title>PPHOTOGRAPHY WEBSITE</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
@@ -104,7 +104,81 @@
         <div class="loader"></div>
     </div>
 
-    <?=include_page('landing/nav')?>
+    <header class="header bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href="<?=page('home.php')?>" style="display: flex;vertical-align:middle; justify-content: flex-start; align-items: center;">
+                            <img src="<?=assets()?>/img/logop.jpg" height="50" width="50" alt="Logo">
+                            <b style="color:#343a40;font-size:20px;padding-left:10px;">PPhotography</b>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-10" style=" padding-left:10px; margin:auto;">
+                    <div class="header__nav__option">
+                        <nav class="header__nav__menu mobile-menu">
+                            <ul>
+                                <li><a id="hm" href="<?=page('home.php')?>" class="text-dark">Home</a></li>
+                                <li><a id="about" href="<?=page('about.php')?>" class="text-dark">About</a></li>
+                                <li><a id="port" href="<?=page('portfolio.php')?>" class="text-dark">Portfolio</a></li>
+                                <li><a id="serv" href="<?=page('services.php')?>" class="text-dark">Services</a></li>
+                                <li><a id="cont" href="<?=page('contact.php')?>" class="text-dark">Contact</a></li>
+
+                            </ul>
+                        </nav>
+
+                        <div class="header__nav__social">
+                            <a href="<?=page('services.php')?>"><i><button class="book btn btn-danger text-white">BOOK NOW</button></i></a>
+                            <a href="#"><i></i></a>
+                            <a href="#"><i></i></a>
+                            <a href="#"><i></i></a>
+                            <a href="#"><i></i></a>
+                            <a href="<?=page('loginpage.php')?>"><button class="login btn btn-outline-danger">LOG IN</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header><header class="header bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href="<?=page('home.php')?>" style="display: flex;vertical-align:middle; justify-content: flex-start; align-items: center;">
+                            <img src="<?=assets()?>/img/logop.jpg" height="50" width="50" alt="Logo">
+                            <b style="color:#343a40;font-size:20px;padding-left:10px;">PPhotography</b>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-10" style=" padding-left:10px; margin:auto;">
+                    <div class="header__nav__option">
+                        <nav class="header__nav__menu mobile-menu">
+                            <ul>
+                                <li><a id="hm" href="<?=page('home.php')?>" class="text-dark">Home</a></li>
+                                <li><a id="about" href="<?=page('about.php')?>" class="text-dark">About</a></li>
+                                <li><a id="port" href="<?=page('portfolio.php')?>" class="text-dark">Portfolio</a></li>
+                                <li><a id="serv" href="<?=page('services.php')?>" class="text-dark">Services</a></li>
+                                <li><a id="cont" href="<?=page('contact.php')?>" class="text-dark">Contact</a></li>
+
+                            </ul>
+                        </nav>
+
+                        <div class="header__nav__social">
+                            <a href="<?=page('services.php')?>"><i><button class="book btn btn-danger text-white">BOOK NOW</button></i></a>
+                            <a href="#"><i></i></a>
+                            <a href="#"><i></i></a>
+                            <a href="#"><i></i></a>
+                            <a href="#"><i></i></a>
+                            <a href="<?=page('loginpage.php')?>"><button class="login btn btn-outline-danger">LOG IN</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
     <div class="breadcrumb-option spad set-bg" data-setbg="<?=assets()?>/phograph/img/breadcrumb-bg.jpg">
         <div class="container">
             <div class="row">
@@ -379,3 +453,92 @@
 </body>
 
 </html>
+
+<style>
+    /* Ensure these variables are defined in your :root block if not already */
+:root {
+    --theme-red: #E53935; /* A strong, primary red */
+    --theme-light-red: #FFCDD2; /* A very light red for subtle backgrounds */
+    --theme-black: #212121; /* A dark grey for primary text */
+    --theme-white: #FFFFFF;
+}
+
+/* Style for image icons within .services__item__icon */
+.services__item__icon img {
+    /* This filter attempts to convert the image colors to red. */
+    /* Adjust these values if the initial red isn't quite right. */
+    filter: invert(20%) sepia(100%) saturate(600%) hue-rotate(330deg) brightness(90%) contrast(100%);
+    /* This filter aims to shift existing colors towards a vivid red. */
+}
+
+/* Style for the container around the icons for better visual presentation */
+.services__item__icon {
+    background-color: var(--theme-light-red); /* Light red background for the icon circle */
+    border-radius: 50%; /* Make it circular */
+    display: inline-flex; /* Helps center the image */
+    align-items: center;
+    justify-content: center;
+    padding: 15px; /* Adjust padding around the icon */
+    margin-bottom: 20px; /* Space below the icon */
+    /* Remove any specific width/height if it's interfering with responsiveness */
+    height: 70px; /* Example fixed size, adjust as needed */
+    width: 70px;  /* Example fixed size, adjust as needed */
+}
+
+/* Ensure text colors are consistent within these service items */
+.about__text .services__item h4 {
+    color: var(--theme-black);
+    margin-bottom: 10px;
+}
+
+.about__text .services__item p {
+    color: #666; /* Softer black for body text */
+}
+
+/* Style for the service item boxes themselves (if you want them distinct) */
+.about__text .services__item {
+    background-color: var(--theme-white); /* White background for each service item */
+    padding: 25px; /* Adjust padding for visual comfort */
+    border-radius: 8px; /* Slightly rounded corners */
+    text-align: center; /* Center content within the box */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    margin-bottom: 20px; /* Space between items */
+    height: 100%; /* Ensure items in a row have consistent height */
+    display: flex; /* Use flexbox for internal alignment */
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.about__text .services__item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* More prominent shadow on hover */
+}
+
+/* General text color for the about section description */
+.about__text__desc p {
+    color: #444; /* Slightly softer than pure black */
+    line-height: 1.8; /* Improve readability */
+}
+
+/* Section title refinements */
+.section-title span {
+    color: var(--theme-red); /* Your red accent color */
+    font-weight: 700; /* Make it bold */
+    text-transform: uppercase; /* All caps */
+    letter-spacing: 1px; /* Space out letters slightly */
+}
+
+.section-title h2 {
+    color: var(--theme-black); /* Dark color for main heading */
+    font-size: 36px; /* Adjust size as needed */
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.about__text p.text-dark {
+    color: #444; /* Ensure body text is a good readable dark grey */
+    line-height: 1.7;
+}
+</style>

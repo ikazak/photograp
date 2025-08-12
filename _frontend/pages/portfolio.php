@@ -7,7 +7,7 @@
     <meta name="keywords" content="Videograph, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Videograph | Template</title>
+    <title>PPHOTOGRAPHY WEBSITE</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
@@ -27,7 +27,44 @@
         <div class="loader"></div>
     </div>
 
-    <?=include_page('landing/nav')?>
+    <header class="header bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href="<?=page('home.php')?>" style="display: flex;vertical-align:middle; justify-content: flex-start; align-items: center;">
+                            <img src="<?=assets()?>/img/logop.jpg" height="50" width="50" alt="Logo">
+                            <b style="color:#343a40;font-size:20px;padding-left:10px;">PPhotography</b>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-10" style=" padding-left:10px; margin:auto;">
+                    <div class="header__nav__option">
+                        <nav class="header__nav__menu mobile-menu">
+                            <ul>
+                                <li><a id="hm" href="<?=page('home.php')?>" class="text-dark">Home</a></li>
+                                <li><a id="about" href="<?=page('about.php')?>" class="text-dark">About</a></li>
+                                <li><a id="port" href="<?=page('portfolio.php')?>" class="text-dark">Portfolio</a></li>
+                                <li><a id="serv" href="<?=page('services.php')?>" class="text-dark">Services</a></li>
+                                <li><a id="cont" href="<?=page('contact.php')?>" class="text-dark">Contact</a></li>
+
+                            </ul>
+                        </nav>
+
+                        <div class="header__nav__social">
+                            <a href="<?=page('services.php')?>"><i><button class="book btn btn-danger text-white">BOOK NOW</button></i></a>
+                            <a href="#"><i></i></a>
+                            <a href="#"><i></i></a>
+                            <a href="#"><i></i></a>
+                            <a href="#"><i></i></a>
+                            <a href="<?=page('loginpage.php')?>"><button class="login btn btn-outline-danger">LOG IN</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
     <div class="breadcrumb-option spad set-bg" data-setbg="<?=assets()?>/phograph/img/breadcrumb-bg.jpg">
         <div class="container">
             <div class="row">
@@ -62,40 +99,41 @@
         <div class="photographer-grid">
             <div class="photographer-card" data-category="wedding">
                 <div class="profile-image-wrapper">
-                    <img src="https://via.placeholder.com/100/DC3545/FFFFFF?text=P1" alt="Photographer 1" class="profile-image">
+                    <img src="<?=assets()?>/img/photo1.jpg" alt="Photographer 1" class="profile-image">
                 </div>
-                <h3 class="photographer-name">Elena Photography</h3>
-                <p class="photographer-specialty">Wedding & Event Specialist</p>
-                <p class="photographer-tagline">Capturing your special moments with timeless elegance.</p>
-                <p class="photographer-location"><i class="fas fa-map-marker-alt"></i> Himamaylan City, PH</p>
-                <a href="#" class="btn-view-profile">View Profile</a>
+                <h3 class="photographer-name">Jamie Portrait</h3>
+                <p class="photographer-specialty">Wedding Photographer</p>
+                <p class="photographer-tagline">Capturing the magic of your special days with a creative and personal touch. Passionate about storytelling through images.</p>
+                <p class="photographer-location"><i class="fas fa-map-marker-alt"></i>Skills:
+Portraiture Event Coverage</p>
+                <a href="<?=page('weddingp.php')?>" class="btn-view-profile">View Works</a>
             </div>
 
             <div class="photographer-card" data-category="birthday">
                 <div class="profile-image-wrapper">
-                    <img src="https://via.placeholder.com/100/DC3545/FFFFFF?text=P2" alt="Photographer 2" class="profile-image">
+                    <img src="<?=assets()?>/img/photo2.jpg" alt="Photographer 2" class="profile-image">
                 </div>
                 <h3 class="photographer-name">Markus Lens</h3>
-                <p class="photographer-specialty">Birthday & Lifestyle</p>
+                <p class="photographer-specialty">Birthday Photographer</p>
                 <p class="photographer-tagline">Making your celebrations unforgettable through vibrant photos.</p>
                 <p class="photographer-location"><i class="fas fa-map-marker-alt"></i> Bacolod City, PH</p>
-                <a href="#" class="btn-view-profile">View Profile</a>
+                <a href="<?=page('birthday.php')?>" class="btn-view-profile">View Profile</a>
             </div>
 
             <div class="photographer-card" data-category="portraits">
                 <div class="profile-image-wrapper">
-                    <img src="https://via.placeholder.com/100/DC3545/FFFFFF?text=P3" alt="Photographer 3" class="profile-image">
+                    <img src="<?=assets()?>/img/photo3.jpg" alt="Photographer 3" class="profile-image">
                 </div>
                 <h3 class="photographer-name">Sophia Portraits</h3>
-                <p class="photographer-specialty">Artistic Portraits</p>
+                <p class="photographer-specialty">School Graduation Photographer</p>
                 <p class="photographer-tagline">Unveiling the unique beauty in every individual.</p>
                 <p class="photographer-location"><i class="fas fa-map-marker-alt"></i> Dumaguete City, PH</p>
-                <a href="#" class="btn-view-profile">View Profile</a>
+                <a href="<?=page('new.php')?>" class="btn-view-profile">View Profile</a>
             </div>
 
             <div class="photographer-card" data-category="landscape">
                 <div class="profile-image-wrapper">
-                    <img src="https://via.placeholder.com/100/DC3545/FFFFFF?text=P4" alt="Photographer 4" class="profile-image">
+                    <img src="<?=assets()?>/img/photo4.jpg" alt="Photographer 4" class="profile-image">
                 </div>
                 <h3 class="photographer-name">Nature's Eye</h3>
                 <p class="photographer-specialty">Wilderness & Scenic Landscapes</p>
@@ -106,7 +144,7 @@
 
             <div class="photographer-card" data-category="food">
                 <div class="profile-image-wrapper">
-                    <img src="https://via.placeholder.com/100/DC3545/FFFFFF?text=P5" alt="Photographer 5" class="profile-image">
+                    <img src="<?=assets()?>/img/photo5.jpg" alt="Photographer 5" class="profile-image">
                 </div>
                 <h3 class="photographer-name">Culinary Click</h3>
                 <p class="photographer-specialty">Food & Restaurant</p>
@@ -117,7 +155,7 @@
 
             <div class="photographer-card" data-category="product">
                 <div class="profile-image-wrapper">
-                    <img src="https://via.placeholder.com/100/DC3545/FFFFFF?text=P6" alt="Photographer 6" class="profile-image">
+                    <img src="<?=assets()?>/img/photo7.jpg" alt="Photographer 6" class="profile-image">
                 </div>
                 <h3 class="photographer-name">Pixel Perfect Products</h3>
                 <p class="photographer-specialty">E-commerce Product Photography</p>

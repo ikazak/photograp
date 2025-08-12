@@ -29,12 +29,12 @@ if (!function_exists('assets')) {
         .search-bar input[type="search"]::placeholder { color: #adb5bd; }
         .view-templates-link { text-decoration: none; color: #495057; font-size: 0.9rem; font-weight: 500; }
         .view-templates-link:hover { color: #007bff; }
-        .new-invoice-btn-main { background-color: #20c997; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-size: 0.9rem; font-weight: 500; cursor: pointer; transition: background-color 0.2s ease; }
-        .new-invoice-btn-main:hover { background-color: #1baa80; }
+        .new-invoice-btn-main { background-color: red; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-size: 0.9rem; font-weight: 500; cursor: pointer; transition: background-color 0.2s ease; }
+        .new-invoice-btn-main:hover { background-color:red; }
         .stats-overview { display: flex; gap: 30px; margin-bottom: 30px; }
         .stat-item { display: flex; align-items: center; gap: 10px; }
         .dot { width: 10px; height: 10px; border-radius: 50%; }
-        .dot.green { background-color: #28a745; }
+        .dot.green { background-color: red; }
         .dot.yellow { background-color: #ffc107; }
         .dot.red { background-color: #dc3545; }
         .stat-info { display: flex; flex-direction: column; }
@@ -43,7 +43,7 @@ if (!function_exists('assets')) {
         .invoice-tabs { margin-bottom: 20px; border-bottom: 1px solid #dee2e6; }
         .invoice-tabs ul { list-style: none; display: flex; gap: 25px; padding-left: 0; }
         .invoice-tabs li a { text-decoration: none; color: #6c757d; padding: 10px 0; display: inline-block; font-size: 0.95rem; font-weight: 500; position: relative; cursor: pointer; }
-        .invoice-tabs li a.active { color: #20c997; border-bottom: 2px solid #20c997; }
+        .invoice-tabs li a.active { color: red; border-bottom: 2px solid red; }
         .invoice-tabs li a:not(.active):hover { color: #495057; }
         .invoice-list { display: grid; grid-template-columns: 0.7fr 0.8fr 0.9fr 1.8fr 1.8fr 0.8fr 1fr 0.3fr; gap: 10px 15px; align-items: center; }
         .invoice-list-header { display: contents; font-size: 0.75rem; color: #6c757d; font-weight: 600; text-transform: uppercase; }
@@ -87,8 +87,8 @@ if (!function_exists('assets')) {
         .simple-modal-footer .btn { padding: 8px 15px; border-radius: 4px; cursor: pointer; font-size: 0.9rem; border: 1px solid transparent; }
         .simple-modal-footer .btn-secondary { background-color: #6c757d; color: white; margin-right: 10px; }
         .simple-modal-footer .btn-secondary:hover { background-color: #5a6268; }
-        .simple-modal-footer .btn-primary { background-color: #20c997; color: white; }
-        .simple-modal-footer .btn-primary:hover { background-color: #1baa80; }
+        .simple-modal-footer .btn-primary { background-color:red; color: white; }
+        .simple-modal-footer .btn-primary:hover { background-color: red; }
         .actions-dropdown { display: none; position: absolute; right: 0; top: 25px; background-color: white; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); z-index: 100; min-width: 160px; }
         .actions-dropdown a { color: #333; padding: 8px 12px; text-decoration: none; display: block; font-size: 0.9rem; }
         .actions-dropdown a:hover { background-color: #f5f5f5; }

@@ -1,6 +1,0 @@
-ERROR: (FBZ3I) [2025-05-20 17:05:56] (ERROR) SQLSTATE[42S22]: Column not found: 1054 Unknown column 'image' in 'field list'
-ERROR: (2UIGZ) [2025-05-20 17:06:11] (ERROR) SQLSTATE[42S22]: Column not found: 1054 Unknown column 'image' in 'field list'
-ERROR: (3EY8T) [2025-05-20 17:07:27] (ERROR) SQLSTATE[42S22]: Column not found: 1054 Unknown column 'image' in 'field list'
-ERROR: (71VPO) [2025-05-20 17:11:58] (ERROR) SQLSTATE[42S22]: Column not found: 1054 Unknown column 'date_modified' in 'field list'
-ERROR: (7QZS6) [2025-05-20 17:14:50] (ERROR) SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'photographer_age' cannot be null
-ERROR: (L6QEP) [2025-05-20 17:15:19] (ERROR) SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'photographer_age' cannot be null

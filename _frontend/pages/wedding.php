@@ -7,7 +7,7 @@
     <meta name="keywords" content="Videograph, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Videograph | Template</title>
+    <title>PPHOTOGRAPHY WEBSITE</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
@@ -31,7 +31,44 @@
     </div>
 
     <!-- Header Section Begin -->
-    <?=include_page('landing/nav')?>
+    <header class="header bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href="<?=page('home.php')?>" style="display: flex;vertical-align:middle; justify-content: flex-start; align-items: center;">
+                            <img src="<?=assets()?>/img/logop.jpg" height="50" width="50" alt="Logo">
+                            <b style="color:#343a40;font-size:20px;padding-left:10px;">PPhotography</b>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-10" style=" padding-left:10px; margin:auto;">
+                    <div class="header__nav__option">
+                        <nav class="header__nav__menu mobile-menu">
+                            <ul>
+                                <li><a id="hm" href="<?=page('home.php')?>" class="text-dark">Home</a></li>
+                                <li><a id="about" href="<?=page('about.php')?>" class="text-dark">About</a></li>
+                                <li><a id="port" href="<?=page('portfolio.php')?>" class="text-dark">Portfolio</a></li>
+                                <li><a id="serv" href="<?=page('services.php')?>" class="text-dark">Services</a></li>
+                                <li><a id="cont" href="<?=page('contact.php')?>" class="text-dark">Contact</a></li>
+
+                            </ul>
+                        </nav>
+
+                        <div class="header__nav__social">
+                            <a href="<?=page('services.php')?>"><i><button class="book btn btn-danger text-white">BOOK NOW</button></i></a>
+                            <a href="#"><i></i></a>
+                            <a href="#"><i></i></a>
+                            <a href="#"><i></i></a>
+                            <a href="#"><i></i></a>
+                            <a href="<?=page('loginpage.php')?>"><button class="login btn btn-outline-danger">LOG IN</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
     <!-- Header End -->
 
     <!-- Breadcrumb Begin -->

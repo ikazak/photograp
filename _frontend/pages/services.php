@@ -7,7 +7,7 @@
     <meta name="keywords" content="Videograph, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Videograph | Template</title>
+    <title>PPHOTOGRAPHY WEBSITE</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
@@ -27,7 +27,44 @@
         <div class="loader"></div>
     </div>
 
-    <?=include_page('landing/nav')?>
+    <header class="header bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href="<?=page('home.php')?>" style="display: flex;vertical-align:middle; justify-content: flex-start; align-items: center;">
+                            <img src="<?=assets()?>/img/logop.jpg" height="50" width="50" alt="Logo">
+                            <b style="color:#343a40;font-size:20px;padding-left:10px;">PPhotography</b>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-10" style=" padding-left:10px; margin:auto;">
+                    <div class="header__nav__option">
+                        <nav class="header__nav__menu mobile-menu">
+                            <ul>
+                                <li><a id="hm" href="<?=page('home.php')?>" class="text-dark">Home</a></li>
+                                <li><a id="about" href="<?=page('about.php')?>" class="text-dark">About</a></li>
+                                <li><a id="port" href="<?=page('portfolio.php')?>" class="text-dark">Portfolio</a></li>
+                                <li><a id="serv" href="<?=page('services.php')?>" class="text-dark">Services</a></li>
+                                <li><a id="cont" href="<?=page('contact.php')?>" class="text-dark">Contact</a></li>
+
+                            </ul>
+                        </nav>
+
+                        <div class="header__nav__social">
+                            <a href="<?=page('services.php')?>"><i><button class="book btn btn-danger text-white">BOOK NOW</button></i></a>
+                            <a href="#"><i></i></a>
+                            <a href="#"><i></i></a>
+                            <a href="#"><i></i></a>
+                            <a href="#"><i></i></a>
+                            <a href="<?=page('loginpage.php')?>"><button class="login btn btn-outline-danger">LOG IN</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
     <div class="breadcrumb-option spad set-bg" data-setbg="<?=assets()?>/phograph/img/breadcrumb-bg.jpg">
         <div class="container">
             <div class="row">
@@ -35,7 +72,7 @@
                     <div class="breadcrumb__text">
                         <h2>Our Sevices</h2>
                         <div class="breadcrumb__links">
-                            <a href="#">Home</a>
+                            <a href="<?=page('home.php')?>">Home</a>
                             <span>Services</span>
                         </div>
                     </div>
@@ -52,10 +89,18 @@
                     <ul class="portfolio__filter">
                         <li class="active" data-filter="*">All</li>
                         <li data-filter=".branding">Wedding</li>
+
                         <li data-filter=".digital-marketing">Birthday</li>
                         <li data-filter=".web">Graduation</li>
                         <li data-filter=".photography">Portrait</li>
                         <li data-filter=" .ecommerce">Event</li>
+
+                        <li data-filter=".digital-marketing">
+Portrait</li>
+                        
+                        <li data-filter=".photography">
+School & Milestone</li>
+                        
                     </ul>
                 </div>
             </div>
@@ -83,7 +128,7 @@
                                 <li>covers key moments of birthday</li>
 
                             </ul>
-                            <a href=""><button class="brwose">Browse package</button></a>
+                            <a href="<?=page('wedding.php')?>"><button class="brwose">Browse package</button></a>
                         </div>
                     </div>
                 </div>
@@ -97,7 +142,7 @@
                                 <li>eCommerce</li>
 
                             </ul>
-                            <a href=""><button class="brwose">Browse package</button></a>
+                            <a href="<?=page('wedding.php')?>"><button class="brwose">Browse package</button></a>
                         </div>
                     </div>
                 </div>
@@ -209,85 +254,9 @@
             </div>
         </div>
     </div>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__top">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6">
-                        <div class="footer__top__logo">
-                            <a href="#"><img src="<?=assets()?>/phograph/img/logo.png" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="footer__top__social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-dribbble"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-youtube-play"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer__option">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="footer__option__item">
-                            <h5>About us</h5>
-                            <p>Formed in 2006 by Matt Hobbs and Cael Jones, Videoprah is an award-winning, full-service
-                                production company specializing.</p>
-                            <a href="#" class="read__more">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-3">
-                        <div class="footer__option__item">
-                            <h5>Who we are</h5>
-                            <ul>
-                                <li><a href="#">Team</a></li>
-                                <li><a href="#">Carrers</a></li>
-                                <li><a href="#">Contact us</a></li>
-                                <li><a href="#">Locations</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-3">
-                        <div class="footer__option__item">
-                            <h5>Our work</h5>
-                            <ul>
-                                <li><a href="#">Feature</a></li>
-                                <li><a href="#">Latest</a></li>
-                                <li><a href="#">Browse Archive</a></li>
-                                <li><a href="#">Video for web</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="footer__option__item">
-                            <h5>Newsletter</h5>
-                            <p>Videoprah is an award-winning, full-service production company specializing.</p>
-                            <form action="#">
-                                <input type="text" placeholder="Email">
-                                <button type="submit"><i class="fa fa-send"></i></button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer__copyright">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <p class="footer__copyright__text">Copyright &copy;
-                            <script>
-                                document.write(new Date().getFullYear());
-                            </script>
-                            All rights reserved | This template is made with <i class="fa fa-heart-o"
-                                aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                        </p>
-                        </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    
+    <?=include_page('landing/foot')?>
+
     <script src="<?=assets()?>/phograph/js/jquery-3.3.1.min.js"></script>
     <script src="<?=assets()?>/phograph/js/bootstrap.min.js"></script>
     <script src="<?=assets()?>/phograph/js/jquery.magnific-popup.min.js"></script>
@@ -302,7 +271,59 @@
 </html>
 
 <style>
-    
+    /* Add this to your existing <style> block or your main CSS file (e.g., style.css) */
+
+/* Define your red color variable if you haven't already */
+:root {
+    --theme-red: #E53935; /* A strong, primary red */
+}
+
+.services__item__icon img {
+    /* This filter attempts to convert the image colors to red. */
+    /* The exact values might need tweaking depending on the original icon colors. */
+    /* Experiment with hue-rotate, saturate, brightness, sepia, invert for best results. */
+    filter: invert(20%) sepia(100%) saturate(600%) hue-rotate(330deg) brightness(90%) contrast(100%);
+    /* This specific filter combination aims for a vivid red. */
+    /* You might need to adjust 'hue-rotate' (e.g., 300deg, 340deg) or 'saturate' */
+}
+
+/* Optional: To make the icon container itself feel more themed */
+.services__item__icon {
+    /* If you want a background circle or border behind the icon */
+    background-color: var(--theme-light-red); /* A very light red background */
+    border-radius: 50%; /* Make it circular */
+    display: inline-flex; /* Helps center the image */
+    align-items: center;
+    justify-content: center;
+    padding: 15px; /* Adjust padding around the icon */
+    margin-bottom: 20px; /* Space below the icon */
+}
+
+/* Ensure text colors are consistent within the item */
+.services__item h4 {
+    color: var(--theme-black); /* Or a specific dark grey */
+    margin-bottom: 10px;
+}
+
+.services__item p {
+    color: #666; /* Softer black for body text */
+}
+
+/* Style for the overall item box, if not already handled */
+.services__item {
+    background-color: var(--theme-white); /* White background for each service item */
+    padding: 30px; /* Increase padding for better visual spacing */
+    border-radius: 8px; /* Slightly rounded corners */
+    text-align: center; /* Center the content within the box */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+    margin-bottom: 30px; /* Space between items if they stack */
+}
+
+.services__item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* More prominent shadow on hover */
+}
     :root {
     --primary-red: #DC3545; /* Bootstrap's danger red */
     --light-red: #FF6B6B;
@@ -670,156 +691,7 @@ body {
 }
 
 /* Footer */
-.footer {
-    background-color: var(--dark-gray); /* Dark gray background for footer */
-    padding-top: 80px;
-    padding-bottom: 30px;
-    margin-top: auto; /* Pushes the footer to the bottom */
-}
 
-.footer__top {
-    margin-bottom: 50px;
-}
-
-.footer__top__logo {
-    text-align: left;
-}
-
-.footer__top__social {
-    text-align: right;
-}
-
-.footer__top__social a {
-    display: inline-block;
-    font-size: 16px;
-    color: var(--white);
-    width: 40px;
-    height: 40px;
-    background-color: rgba(255, 255, 255, 0.1);
-    line-height: 40px;
-    text-align: center;
-    border-radius: 50%;
-    margin-right: 10px;
-    transition: all 0.3s;
-}
-
-.footer__top__social a:hover {
-    background-color: var(--primary-red); /* Red on hover */
-}
-
-.footer__option__item {
-    margin-bottom: 30px;
-}
-
-.footer__option__item h5 {
-    color: var(--white);
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-.footer__option__item p {
-    color: var(--medium-gray); /* Slightly lighter gray for footer paragraph text */
-    font-size: 15px;
-    line-height: 25px;
-    margin-bottom: 20px;
-}
-
-.footer__option__item .read__more {
-    font-size: 15px;
-    color: var(--primary-red); /* Red for read more link */
-    font-weight: 700;
-    transition: all 0.3s;
-    text-decoration: none; /* Remove default underline */
-}
-
-.footer__option__item .read__more:hover {
-    text-decoration: underline;
-}
-
-.footer__option__item ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footer__option__item ul li {
-    margin-bottom: 10px;
-}
-
-.footer__option__item ul li:last-child {
-    margin-bottom: 0;
-}
-
-.footer__option__item ul li a {
-    font-size: 15px;
-    color: var(--medium-gray);
-    transition: all 0.3s;
-    text-decoration: none; /* Remove default underline */
-}
-
-.footer__option__item ul li a:hover {
-    color: var(--primary-red); /* Red on hover */
-}
-
-.footer__option__item form {
-    position: relative;
-}
-
-.footer__option__item form input {
-    width: 100%;
-    height: 50px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: none;
-    padding-left: 20px;
-    font-size: 15px;
-    color: var(--white);
-    border-radius: 5px;
-}
-
-.footer__option__item form input::placeholder {
-    color: var(--medium-gray);
-}
-
-.footer__option__item form button {
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 100%;
-    background-color: var(--primary-red); /* Red button */
-    border: none;
-    color: var(--white);
-    padding: 0 20px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-.footer__option__item form button:hover {
-    background-color: var(--dark-red);
-}
-
-.footer__copyright {
-    padding-top: 40px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.footer__copyright__text {
-    color: var(--medium-gray);
-}
-
-.footer__copyright__text i {
-    color: var(--primary-red);
-}
-
-.footer__copyright__text a {
-    color: var(--primary-red);
-    text-decoration: none; /* Remove default underline */
-}
-
-.footer__copyright__text a:hover {
-    text-decoration: underline;
-}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
